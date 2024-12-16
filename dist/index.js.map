@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../bin/live-reload.js", "../src/utils/global/modalviewer.ts", "../src/index.ts"],
+  "sourcesContent": ["new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener('change', () => location.reload());\n", "function loadModelViewerScript() {\n  return new Promise<void>((resolve, reject) => {\n    const script = document.createElement('script');\n    script.type = 'module';\n    script.src = 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';\n    script.onload = () => resolve();\n    script.onerror = () => reject(new Error('Failed to load model-viewer script'));\n    document.head.appendChild(script);\n  });\n}\n\nexport { loadModelViewerScript };\n", "import './index.css';\n\nimport { loadModelViewerScript } from '$utils/global/modalviewer';\nwindow.Webflow ||= [];\nwindow.Webflow.push(() => {\n  loadModelViewerScript();\n});\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,GAAG,uBAAY,UAAU,EAAE,iBAAiB,UAAU,MAAM,SAAS,OAAO,CAAC;;;ACA7F,WAAS,wBAAwB;AAC/B,WAAO,IAAI,QAAc,CAAC,SAAS,WAAW;AAC5C,YAAM,SAAS,SAAS,cAAc,QAAQ;AAC9C,aAAO,OAAO;AACd,aAAO,MAAM;AACb,aAAO,SAAS,MAAM,QAAQ;AAC9B,aAAO,UAAU,MAAM,OAAO,IAAI,MAAM,oCAAoC,CAAC;AAC7E,eAAS,KAAK,YAAY,MAAM;AAAA,IAClC,CAAC;AAAA,EACH;;;ACNA,SAAO,YAAY,CAAC;AACpB,SAAO,QAAQ,KAAK,MAAM;AACxB,0BAAsB;AAAA,EACxB,CAAC;",
+  "names": []
+}

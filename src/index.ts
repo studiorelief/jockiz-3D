@@ -1,7 +1,7 @@
-import { greetUser } from '$utils/greet';
+import './index.css';
 
+import { loadModelViewerScript } from '$utils/global/modalviewer';
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  loadModelViewerScript();
 });

@@ -1,13 +1,13 @@
 {
-  "name": "@finsweet/developer-starter",
-  "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "name": "@studiorelief/jockiz-3D",
+  "version": "1.0.0",
+  "description": "Jockiz 3D ",
+  "homepage": "https://github.com/studiorelief/jockiz-3D#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
+    "name": "Studio Relief",
+    "url": "https://studiorelief.fr"
   },
   "repository": {
     "type": "git",

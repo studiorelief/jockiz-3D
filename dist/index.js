@@ -1,0 +1,1 @@
+"use strict";(()=>{function o(){return new Promise((r,d)=>{let e=document.createElement("script");e.type="module",e.src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js",e.onload=()=>r(),e.onerror=()=>d(new Error("Failed to load model-viewer script")),document.head.appendChild(e)})}window.Webflow||(window.Webflow=[]);window.Webflow.push(()=>{o()});})();
